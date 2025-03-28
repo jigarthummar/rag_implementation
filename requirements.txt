@@ -1,0 +1,15 @@
+sentence-transformers 
+faiss-cpu 
+openai==0.28
+python-dotenv
+PyPDF2
+langchain 
+chromadb 
+tiktoken
+pymupdf
+tqdm
+torch
+fastapi==0.115.6
+uvicorn==0.34.0
+python-multipart
+# pydantic
