@@ -1,6 +1,8 @@
 with openrouter
 
 
+.env file
+
 1->
 pyhton -m venv .venv
 2->
