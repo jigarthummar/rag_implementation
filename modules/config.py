@@ -12,21 +12,17 @@ EMBEDDING_MODEL = 'intfloat/e5-base-v2' # "all-MiniLM-L6-v2"
 PERSIST_DIRECTORY = "chroma_db"
 TOP_K = 7
 SIMILARITY_THRESHOLD = 0.7
-MAX_TOKENS = 700
+MAX_TOKENS = 4000
 
 # Chat settings
-MAX_HISTORY_TURNS = 10  # Number of conversation turns to remember
-# LLM_MODEL = "gpt-3.5-turbo"
-LLM_MODEL = "openai/gpt-4o-2024-11-20"
-  # For chat API (ChatCompletion)
-# LLM_MODEL = "gpt-3.5-turbo-instruct"  # For completion API
+MAX_HISTORY_TURNS = 10  
 
-# API key (from environment variable)
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+# LLM models
+LLM_MODEL = "openai/gpt-4o-2024-11-20"
+
 # OpenRouter models
-# LLM_MODEL = "anthropic/claude-3-opus"  # Main model for generating responses
 QUERY_ENHANCER_MODEL = "anthropic/claude-3-haiku"  # Lighter model for query enhancement
 
 # API keys
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  # Keep for backward compatibility if needed
-# OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
